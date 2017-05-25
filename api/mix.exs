@@ -40,7 +40,8 @@ defmodule Sling.Mixfile do
      {:comeonin, "~> 2.5"},
      {:guardian, "~> 0.13.0"},
      {:cors_plug, "~> 1.1"},
-     {:scrivener_ecto, "~> 1.0"}]
+     {:scrivener_ecto, "~> 1.0"},
+     {:exrm, "~> 0.14.2" }]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
