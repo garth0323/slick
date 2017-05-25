@@ -2,6 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { css, StyleSheet } from 'aphrodite';
+import Icon from 'react-icons-kit';
+import { plus } from 'react-icons-kit/fa/plus';
+import { signOut } from 'react-icons-kit/fa/signOut';
 
 const styles = StyleSheet.create({
   sidebar: {
@@ -90,7 +93,9 @@ const Sidebar = ({ rooms, router, onLogoutClick }: Props) =>
       activeClassName={css(styles.activeLink)}
     >
       <div className={css(styles.badge)}>
-        <span className="fa fa-plus" />
+        <span>
+          <Icon icon={plus}/>
+        </span>
       </div>
     </Link>
     <div style={{ flex: '1' }} />
@@ -99,7 +104,7 @@ const Sidebar = ({ rooms, router, onLogoutClick }: Props) =>
       className={css(styles.link, styles.logoutButton)}
     >
       <div className={css(styles.badge)}>
-        <span className="fa fa-sign-out" />
+        <Icon icon={signOut}/>
       </div>
     </button>
   </div>;
